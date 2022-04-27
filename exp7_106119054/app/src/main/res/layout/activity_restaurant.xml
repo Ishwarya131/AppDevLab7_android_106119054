@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantActivity">
+
+    <TableLayout
+        android:id="@+id/table_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="Type of menu"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Spinner android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_margin="8dp"
+                android:id="@+id/typeofmenu"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="Drinks"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Spinner android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_margin="8dp"
+                android:id="@+id/drinks"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="Starters"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Spinner android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_margin="8dp"
+                android:id="@+id/starters"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="Main Dish"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Spinner android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:spinnerMode="dropdown"
+                android:id="@+id/maindish"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="Desserts"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Spinner android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:spinnerMode="dropdown"
+                android:id="@+id/desserts"/>
+        </TableRow>
+    </TableLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_layout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
